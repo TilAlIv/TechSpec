@@ -26,8 +26,11 @@ public sealed class Context : DbContext
         
         modelBuilder.Entity<Role>().HasKey(r => r.Id);
         modelBuilder.Entity<Role>().HasIndex(r => r.Code).IsUnique();
-        modelBuilder.Entity<Role>().Property(r=>r.Code).HasColumnType("varchar(256)");
-        
+        modelBuilder.Entity<Role>().Property(r => r.Code).HasColumnType("varchar(256)");
+
+
+
+
     }
 
 }
